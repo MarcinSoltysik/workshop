@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>task-0-responsive-img</title>
+  </head>
+
+  <body>
+    <main>
+      <section>
+        <img src="./img/nunzio-guerrera-PvtCOQP2cjg-unsplash.jpg" alt="">
+      </section>
+      <section>
+        <h3>Adjusting the size of an image</h3>
+        <article>
+          <ul>
+            <li>
+              <p>
+                Adjusting the size of an image to the dimensions of the device in CSS is commonly referred to as
+                responsive
+                images. In
+                responsive design, the goal is to create a website that can adapt to different screen sizes and device
+                types,
+                including
+                desktop computers, laptops, tablets, and smartphones.
+
+                To adjust the size of an image to the dimensions of the device, CSS provides a few different techniques.
+                One
+                common
+                approach is to use the max-width property to set the maximum width of an image, while allowing the
+                height to
+                be flexible
+                and adjust automatically. For example, you could use the following CSS:
+              </p>
+              <code>
+            img {
+              max-width: 100%;
+              height: auto;
+            }
+          </code>
+            </li>
+            <li>
+              <p>
+                This code sets the maximum width of the image to 100% of its container, and the height is set to auto,
+                which
+                allows the
+                image to scale proportionally to fit the width of the container.
+
+                Another approach is to use the srcset attribute to specify multiple versions of an image with different
+                sizes
+                and
+                resolutions. The browser can then select the most appropriate image based on the device's screen size
+                and
+                resolution.
+                For example:
+              </p>
+              <code><img src="small.jpg" srcset="medium.jpg 1000w,
+            large.jpg 2000w" sizes="(max-width: 600px) 100vw, 50vw" alt="Responsive image"></code>
+            </li>
+            <li>
+              <p>In this code, three different versions of the image are specified with different widths. The sizes
+                attribute
+                tells the
+                browser how to select the appropriate image based on the device's screen size, and the alt attribute
+                provides
+                alternative text for users who can't see the image.</p>
+            </li>
+          </ul>
+
+        </article>
+      </section>
+
+
+
+
+      <a href="../../../main/index.html">HOME</a>
+    </main>
+
+
+
+  </body>
+
+</html>
