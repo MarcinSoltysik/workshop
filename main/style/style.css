@@ -1,0 +1,44 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+.container-margin__header {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.container-margin {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ff0000;
+}
+
+.nav {
+  display: flex;
+}
+.nav__item {
+  /* padding: 15px; */
+  margin-right: 15px;
+}
+
+.header__logo {
+  padding: 5px;
+}
+
+.section__desciption {
+  background-color: #ffff00;
+}
+.section__task {
+  background-color: #e2cfb8ec;
+}
